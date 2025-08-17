@@ -87,6 +87,8 @@ python format_manager.py solution.unformatted.cpp solution.formatted.cpp format
 The tool uses language-specific formatters with configurations stored in the `cfg` directory:
 
 - C-family languages use Uncrustify with custom configuration files
+  - For **C++**, the configuration is based on [rindeal/uncrustify-c-cpp.cfg](https://gist.github.com/rindeal/25f8cd7815ad35542ba9), which provides widely adopted style rules.
+
 - Python uses YAPF with custom configuration
 
 ## Performance
