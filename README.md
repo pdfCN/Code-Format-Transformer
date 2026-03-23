@@ -1,8 +1,12 @@
-# Code Format Transformer
+# 🔄 Code Format Transformer
+
+## 📰 News
+
+🚀 We have extended support to more languages and released a new tool: **[Deblank](https://github.com/anpl-code/Deblank)**.
 
 This tool addresses the "Hidden Cost of Readability" in LLM processing by providing bidirectional transformation between human-readable (formatted) code and token-efficient (unformatted) code for LLM consumption.
 
-## Overview
+## 📋 Overview
 
 When processing code through Large Language Models (LLMs), formatting elements like indentation, spaces, and newlines significantly increase token consumption while providing minimal benefits for SOTA models. This tool allows you to:
 
@@ -11,7 +15,7 @@ When processing code through Large Language Models (LLMs), formatting elements l
 
 The transformation preserves complete program semantics while only removing formatting elements that don't affect execution.
 
-## Installation
+## ⚙️ Installation
 
 ### Prerequisites
 
@@ -46,7 +50,7 @@ cd The-hidden-cost
 pip install -r requirements.txt
 ```
 
-## Usage
+## 💻 Usage
 
 The main interface is through the `format_manager.py` script:
 
@@ -75,14 +79,14 @@ python format_manager.py MyCode.java MyCode.unformatted.java unformat
 python format_manager.py solution.unformatted.cpp solution.formatted.cpp format
 ```
 
-## Supported Languages
+## 🌐 Supported Languages
 
 - Java
 - C++
 - C#
 - Python
 
-## Configuration
+## 🛠️ Configuration
 
 The tool uses language-specific formatters with configurations stored in the `cfg` directory:
 
@@ -91,14 +95,14 @@ The tool uses language-specific formatters with configurations stored in the `cf
 
 - Python uses YAPF with custom configuration
 
-## Performance
+## 📊 Performance
 
 - AST preservation: 100% semantic equivalence verified across the McEval dataset
 - Average transformation speed: 76ms per code sample
 - Token reduction: 22-42% for input code (language dependent)
 
-## Benefits for LLM Applications
+## ✨ Benefits for LLM Applications
 
-- Reduced token consumption for API-based LLMs (direct cost savings)
-- Faster processing times
-- Improved inference efficiency without compromising model performance
+- 💰 Reduced token consumption for API-based LLMs (direct cost savings)
+- ⚡ Faster processing times
+- 🎯 Improved inference efficiency without compromising model performance
