@@ -2,7 +2,8 @@
 
 ## 📰 News
 
-🚀 We have extended support to more languages and released a new tool: **[Deblank](https://github.com/anpl-code/Deblank)**.
+> [!IMPORTANT]
+> **🚀 Latest:** We have extended support to more languages and released a new tool: **[Deblank](https://github.com/anpl-code/Deblank)**.
 
 This tool addresses the "Hidden Cost of Readability" in LLM processing by providing bidirectional transformation between human-readable (formatted) code and token-efficient (unformatted) code for LLM consumption.
 
